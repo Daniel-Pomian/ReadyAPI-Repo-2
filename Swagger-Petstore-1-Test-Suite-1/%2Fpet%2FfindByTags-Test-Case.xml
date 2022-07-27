@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f18451fa-98d8-4361-9212-26d18dc84bd2" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/pet/findByTags Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [/pet/findByTags] located at [/pet/findByTags]</con:description>
+  <con:settings>
+    <con:setting id="f18451fa-98d8-4361-9212-26d18dc84bd2fileName">%2Fpet%2FfindByTags-Test-Case</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

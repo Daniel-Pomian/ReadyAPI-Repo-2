@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="4d30733e-4be5-46a5-9c57-2e7606212a10" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/store/order/{orderId} Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [/store/order/{orderId}] located at [/store/order/{orderId}]</con:description>
+  <con:settings>
+    <con:setting id="4d30733e-4be5-46a5-9c57-2e7606212a10fileName">%2Fstore%2Forder%2F%7BorderId%7D-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="ff8877d2-c13e-4cb1-bfea-1841cad86ff5">
+    <con:settings/>
+    <con:config service="Swagger Petstore 1" resourcePath="/store/order/{orderId}" methodName="getOrderById" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="dfcb1db0-d48b-45b2-a6d2-cbccbbe71596" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 2" id="df80d356-7397-44c7-abda-89d89cd9e4d4">
+    <con:settings/>
+    <con:config service="Swagger Petstore 1" resourcePath="/store/order/{orderId}" methodName="deleteOrder" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1 2" id="e4dd06ec-6330-4de5-9ab8-67d1c07a56a6" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

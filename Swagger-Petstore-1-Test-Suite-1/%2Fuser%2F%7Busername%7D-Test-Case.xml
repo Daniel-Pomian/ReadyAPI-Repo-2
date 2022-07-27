@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="79ce153c-fb0c-40f9-8465-8ab974167430" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/user/{username} Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [/user/{username}] located at [/user/{username}]</con:description>
+  <con:settings>
+    <con:setting id="79ce153c-fb0c-40f9-8465-8ab974167430fileName">%2Fuser%2F%7Busername%7D-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="160b65c4-e02f-4af1-8abf-0368a5aabdcf">
+    <con:settings/>
+    <con:config service="Swagger Petstore 1" resourcePath="/user/{username}" methodName="getUserByName" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="5ee86945-4440-4e2d-955a-2d54920d981c" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 2" id="e8c896c8-5a4b-4f35-968c-2b1882428ed7">
+    <con:settings/>
+    <con:config service="Swagger Petstore 1" resourcePath="/user/{username}" methodName="deleteUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1 2" id="760a8b9e-3f6f-44be-93e4-1ce8b5ccd1c7" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 3" id="6d13e938-a0df-4c9f-bcf9-6290a1191d2f">
+    <con:settings/>
+    <con:config service="Swagger Petstore 1" resourcePath="/user/{username}" methodName="updateUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1 3" id="98ae1dfa-a94b-47ca-83fa-52133756eb36" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+        <con:request>{\r
+  "id" : 0,\r
+  "username" : "string",\r
+  "firstName" : "string",\r
+  "lastName" : "string",\r
+  "email" : "string",\r
+  "password" : "string",\r
+  "phone" : "string",\r
+  "userStatus" : 0\r
+}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

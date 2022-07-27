@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/pet/{petId}" path="/pet/{petId}" id="2b16fc3c-e961-4865-9d62-a136b6a65a4a" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2b16fc3c-e961-4865-9d62-a136b6a65a4afileName">%2Fpet%2F%7BpetId%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getPetById" id="a26f636b-6521-4d6f-aa7a-3d1175355443" method="GET">
+    <con:description>Returns a single pet</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>petId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>ID of pet to return</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrl>
+      <photoUrl>string</photoUrl>
+   </photoUrl>
+   <tag>
+      <Tag>
+         <id>0</id>
+         <name>string</name>
+      </Tag>
+   </tag>
+   <status>available</status>
+</Pet>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="7fc4cc0f-d8a6-4fcc-8932-b3b81055dd7c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="updatePetWithForm" id="7aed12fa-7105-46a6-a8b2-9861194b59f2" method="POST">
+    <con:description>Updates a pet in the store with form data</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>petId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>ID of pet that needs to be updated</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="47bdacdb-8224-4ea4-896b-e8a210377462" mediaType="application/x-www-form-urlencoded">
+      <con:settings/>
+      <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="deletePet" id="fb36afbd-d0d5-4d75-86ed-bdc658e33482" method="DELETE">
+    <con:description>Deletes a pet</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>api_key</con:name>
+        <con:style>HEADER</con:style>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>petId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>Pet id to delete</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="b28c587e-db82-4f34-bc82-be27f7b5441b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

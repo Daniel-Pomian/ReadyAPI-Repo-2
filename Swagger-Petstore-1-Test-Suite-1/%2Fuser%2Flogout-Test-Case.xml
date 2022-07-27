@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="b54fcc4a-22e4-4fdf-9d2b-6053422b6c3f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/user/logout Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [/user/logout] located at [/user/logout]</con:description>
+  <con:settings>
+    <con:setting id="b54fcc4a-22e4-4fdf-9d2b-6053422b6c3ffileName">%2Fuser%2Flogout-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="0cdea314-7a85-4f17-8f9c-0b021d54aa16">
+    <con:settings/>
+    <con:config service="Swagger Petstore 1" resourcePath="/user/logout" methodName="logoutUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="344054c2-7c3d-4b43-83e0-e987ebe8a92d" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

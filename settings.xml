@@ -2,16 +2,27 @@
 <con:soapui-project id="333b3b92-bc99-4628-afcb-90672b2992ea" created="2.7.0" activeEnvironment="Default environment" name="REST Sample Project" resourceRoot="" updated="3.40.2" encryptionMode="Not encrypted" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
   <con:description>Sample Projects bases on a virtualized REST service. Please make sure that port 8084 is available on your local machine or you can update the virtual API under the serviceV tool to reflect an open port on your system. You will also have to update the ports on the tests to reflect
 the same ports on the virtual service.</con:description>
-  <con:settings/>
+  <con:settings>
+    <con:setting id="333b3b92-bc99-4628-afcb-90672b2992eafileName">REST-Sample-Project-readyapi-project</con:setting>
+  </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:requirements/>
   <con:properties/>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
   <con:jmsConnectionContainer/>
-  <con:oAuth2ProfileContainer/>
+  <con:oAuth2ProfileContainer>
+    <con:oAuth2Profile>
+      <con:name>petstore_auth IMPLICIT</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:authorizationURI>http://petstore.swagger.io/oauth/dialog</con:authorizationURI>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>IMPLICIT_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:scope>write:pets read:pets</con:scope>
+    </con:oAuth2Profile>
+  </con:oAuth2ProfileContainer>
   <con:oAuth1ProfileContainer/>
-  <con:reporting/>
   <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
     <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
 // This code is often used for adding custom authentication to ReadyAPI functional tests
@@ -41,6 +52,16 @@ the same ports on the virtual service.</con:description>
 // pw.close()
 // fos.close()</con:script>
   </con:eventHandlers>
-  <con:authRepository/>
+  <con:authRepository>
+    <con:oAuth20AuthEntry>
+      <con:name>petstore_auth IMPLICIT</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:authorizationURI>http://petstore.swagger.io/oauth/dialog</con:authorizationURI>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>IMPLICIT_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:scope>write:pets read:pets</con:scope>
+    </con:oAuth20AuthEntry>
+  </con:authRepository>
   <con:tags/>
 </con:soapui-project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="11129436-7ee7-4581-bb0c-729abd2b2b39" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/store/order Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [/store/order] located at [/store/order]</con:description>
+  <con:settings>
+    <con:setting id="11129436-7ee7-4581-bb0c-729abd2b2b39fileName">%2Fstore%2Forder-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="5a8c6b39-12d2-4807-b36a-c21e75d96a9d">
+    <con:settings/>
+    <con:config service="Swagger Petstore 1" resourcePath="/store/order" methodName="placeOrder" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="9a18ca64-0113-4195-a075-5572866965c2" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+        <con:request>{\r
+  "id" : 0,\r
+  "petId" : 0,\r
+  "quantity" : 0,\r
+  "shipDate" : "2015-07-20T15:49:04-07:00",\r
+  "status" : "placed",\r
+  "complete" : false\r
+}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

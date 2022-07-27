@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/user/logout" path="/user/logout" id="27c3f4f9-4030-4876-960e-deb581d42bd6" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="27c3f4f9-4030-4876-960e-deb581d42bd6fileName">%2Fuser%2Flogout</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="logoutUser" id="c1abc6b6-50a6-44c0-91d1-c809f40c3de6" method="GET">
+    <con:description>Logs out current logged in user session</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="344054c2-7c3d-4b43-83e0-e987ebe8a92d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

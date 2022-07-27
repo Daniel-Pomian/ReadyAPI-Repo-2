@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="dee660c6-39e7-4601-9272-90db811ddbb0" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/store/inventory Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [/store/inventory] located at [/store/inventory]</con:description>
+  <con:settings>
+    <con:setting id="dee660c6-39e7-4601-9272-90db811ddbb0fileName">%2Fstore%2Finventory-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="8d2e66cf-707a-437d-b37c-89dd7f74e83b">
+    <con:settings/>
+    <con:config service="Swagger Petstore 1" resourcePath="/store/inventory" methodName="getInventory" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="4ec3952e-a44b-4122-9a5c-3e2627575453" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

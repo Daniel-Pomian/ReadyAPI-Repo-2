@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="caa2d0eb-1a1d-45e0-8c85-e5abb727da8f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/pet Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [/pet] located at [/pet]</con:description>
+  <con:settings>
+    <con:setting id="caa2d0eb-1a1d-45e0-8c85-e5abb727da8ffileName">%2Fpet-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="eb4ca184-b54d-4067-aabf-c0c4f8606bbd">
+    <con:settings/>
+    <con:config service="Swagger Petstore 1" resourcePath="/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="31076c02-9d83-4b32-b2ae-a6d33c349de1" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://prod.swaggerhub.com/smartbear/prod/1.0.0</con:endpoint>
+        <con:request>{\r
+  "id" : 0,\r
+  "category" : {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  },\r
+  "name" : "doggie",\r
+  "photoUrls" : [ "string" ],\r
+  "tags" : [ {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  } ],\r
+  "status" : "available"\r
+}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 2" id="eecf5c4d-4500-44f4-ab03-979906db0599">
+    <con:settings/>
+    <con:config service="Swagger Petstore 1" resourcePath="/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 2" id="e9dcfe59-4bc8-4cd3-894a-79aba821698b" mediaType="application/xml">
+        <con:settings/>
+        <con:endpoint>https://prod.swaggerhub.com/smartbear/prod/1.0.0</con:endpoint>
+        <con:request><![CDATA[<Pet>\r
+   <id>0</id>\r
+   <Category>\r
+      <id>0</id>\r
+      <name>string</name>\r
+   </Category>\r
+   <name>doggie</name>\r
+   <photoUrl>\r
+      <photoUrl>string</photoUrl>\r
+   </photoUrl>\r
+   <tag>\r
+      <Tag>\r
+         <id>0</id>\r
+         <name>string</name>\r
+      </Tag>\r
+   </tag>\r
+   <status>available</status>\r
+</Pet>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 2" id="4b9f6104-88f6-41dc-8d2d-3c7e08f36080">
+    <con:settings/>
+    <con:config service="Swagger Petstore 1" resourcePath="/pet" methodName="updatePet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1 2" id="d15ec5bb-7f9d-413f-9ce2-e9de5ed5f4fc" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://prod.swaggerhub.com/smartbear/prod/1.0.0</con:endpoint>
+        <con:request>{\r
+  "id" : 0,\r
+  "category" : {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  },\r
+  "name" : "doggie",\r
+  "photoUrls" : [ "string" ],\r
+  "tags" : [ {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  } ],\r
+  "status" : "available"\r
+}</con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 2 2" id="e1dfbd4f-db0b-4d28-a8a1-918dcdf376a3">
+    <con:settings/>
+    <con:config service="Swagger Petstore 1" resourcePath="/pet" methodName="updatePet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 2 2" id="8212e57d-682e-42c5-ad4e-b384027f31f2" mediaType="application/xml">
+        <con:settings/>
+        <con:endpoint>https://prod.swaggerhub.com/smartbear/prod/1.0.0</con:endpoint>
+        <con:request><![CDATA[<Pet>\r
+   <id>0</id>\r
+   <Category>\r
+      <id>0</id>\r
+      <name>string</name>\r
+   </Category>\r
+   <name>doggie</name>\r
+   <photoUrl>\r
+      <photoUrl>string</photoUrl>\r
+   </photoUrl>\r
+   <tag>\r
+      <Tag>\r
+         <id>0</id>\r
+         <name>string</name>\r
+      </Tag>\r
+   </tag>\r
+   <status>available</status>\r
+</Pet>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

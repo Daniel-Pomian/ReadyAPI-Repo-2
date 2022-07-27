@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/pet/{petId}/uploadImage" path="/pet/{petId}/uploadImage" id="d67eb2b6-2668-4606-90d5-818e21450076" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d67eb2b6-2668-4606-90d5-818e21450076fileName">%2Fpet%2F%7BpetId%7D%2FuploadImage</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="uploadFile" id="518ccb0b-5653-406a-9212-57c2b999ae04" method="POST">
+    <con:description>uploads an image</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>petId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>ID of pet to update</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "code" : 0,
+  "type" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/octet-stream</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="a612f9e0-d092-4ea1-afa4-b782d16dd19c" mediaType="application/octet-stream">
+      <con:settings/>
+      <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
