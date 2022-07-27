@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/pet/findByStatus" path="/pet/findByStatus" id="9c449866-7d36-4e9f-970c-78ef0052d58f" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/pet/findByStatus" path="/pet/findByStatus" id="9c449866-7d36-4e9f-970c-78ef0052d58f" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="9c449866-7d36-4e9f-970c-78ef0052d58ffileName">%2Fpet%2FfindByStatus</con:setting>
   </con:settings>
@@ -61,6 +61,10 @@
     <con:request name="Request 1" id="4b8299ed-7a4f-49de-957a-08fb84aee36c" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

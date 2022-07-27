@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/user/{username}" path="/user/{username}" id="356160ce-612c-4085-aec5-ea1e0ef2cfb8" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/user/{username}" path="/user/{username}" id="356160ce-612c-4085-aec5-ea1e0ef2cfb8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="356160ce-612c-4085-aec5-ea1e0ef2cfb8fileName">%2Fuser%2F%7Busername%7D</con:setting>
   </con:settings>
@@ -49,6 +49,10 @@
     <con:request name="Request 1" id="5ee86945-4440-4e2d-955a-2d54920d981c" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -65,6 +69,10 @@
     <con:request name="Request 1" id="760a8b9e-3f6f-44be-93e4-1ce8b5ccd1c7" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://find.bystatys.com/smartbear/Test-petstore/1.0.0</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -105,6 +113,10 @@
   "phone" : "string",\r
   "userStatus" : 0\r
 }</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
