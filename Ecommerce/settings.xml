@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:interface xsi:type="con:RestService" id="e5d8bd5a-d8eb-4541-bc6d-b4901a1faebb" name="Ecommerce" type="rest" wadlVersion="http://wadl.dev.java.net/2009/02" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings>
-      <con:setting id="8b4877da-9c17-4d74-baf9-2881747b6a79fileName">http%3A%2F%2Flocalhost%3A8084</con:setting><con:setting id="e5d8bd5a-d8eb-4541-bc6d-b4901a1faebbfileName">Ecommerce</con:setting></con:settings><con:definitionCache rootPart="" type="TEXT"/><con:endpoints>
+      <con:setting id="8b4877da-9c17-4d74-baf9-2881747b6a79fileName">http%3A%2F%2Flocalhost%3A8084</con:setting><con:setting id="e5d8bd5a-d8eb-4541-bc6d-b4901a1faebbfileName">Ecommerce</con:setting></con:settings><con:definitionCache type="TEXT"/><con:endpoints>
       <con:endpoint>http://localhost:8084</con:endpoint></con:endpoints><con:environmentSpec>
       <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
         <con:authProfile>Inherit From Parent</con:authProfile></con:entry><con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
