@@ -7,7 +7,7 @@ the same ports on the virtual service.</con:description>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:requirements/>
-  <con:properties/>
+  <con:properties><con:property><con:name>testProperty</con:name><con:value>0</con:value></con:property></con:properties>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
   <con:jmsConnectionContainer/>
